@@ -10,3 +10,49 @@ source
 
 
 uvicorn main:app --reload
+
+
+
+why we need docker??
+-- imagine  you are running your code on your laptop with a different programming version and another user is wroking on hte different version
+
+reason of failures:
+- using  different programming version
+- using different version of libraries of librairs like scikint learn ,fast api
+- differet os dependencies
+
+
+Docker helps package your application code , running , dependencies and startup 
+
+4 major requierments:
+- Dockerfile - Set of instruction for packaging ML application
+- Image - package reusable application artifact
+
+--constainer - A running instance of the Image
+- port Mapping -
+
+
+=========================================================
+phase-3: automated testing and ci/cd with github actions
+=========================================================
+
+
+Our goal:
+whenever we push code on the github. the sustem should automated run the tests and build the docker image. later we will extend the same pipeline to the publish the image and deploy it at the docker hub 
+
+
+1. developer push the code
+2. github actions starts the workflow
+3. triggered by a push or pull requierments
+4. reun tests and validate the model api behavior
+5. build image and verigy docker packageing
+
+
+
+part-1 what is the CI/CD ?
+------------------------------------
+CI- continuous integration
+CD- Continuous Delivery
+CD- continuous deployment
+
+
