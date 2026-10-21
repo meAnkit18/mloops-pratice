@@ -60,3 +60,16 @@ automation testing:
 - pytest + fastapi testclient +github actions
 
 
+
+-mlops
+--tests
+---test_api.py
+--.github
+
+
+
+intall two dependenies:
+pytest -it discovers and run automated tests, report failures
+httpx - FastAPI testclient uses HTTPX to simulate HTTP requests to your applications without requiring you to start a separate we server
+
+pip install httpx pytest
