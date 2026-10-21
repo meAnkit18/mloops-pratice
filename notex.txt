@@ -51,8 +51,12 @@ whenever we push code on the github. the sustem should automated run the tests a
 
 part-1 what is the CI/CD ?
 ------------------------------------
-CI- continuous integration
-CD- Continuous Delivery
-CD- continuous deployment
+CI- continuous integration - Automatically validates the code changes through tests and build checks
+CD- Continuous Delivery - keep changes ready to relase , with production release poteitally requiring approval
+CD- continuous deployment- Automatically releases changes go production wnen all rewuired checkes pass
+
+
+automation testing:
+- pytest + fastapi testclient +github actions
 
 
